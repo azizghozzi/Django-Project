@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+  <head>
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="{% static 'index.css'%}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>Covid 19 Data visualization</header>
+    <aside>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/map">Map overview</a></li>
+        <li><a href="/top">Top confirmed cases</a></li>
+        <li><a href="/details">Confirmed Cases per Day</a></li>
+      </ul>
+    </aside>
+    <main>{% block content %}{% endblock %}</main>
+  </body>
+</html>
